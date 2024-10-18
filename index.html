@@ -5,89 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
+    <link rel="stylesheet" href="resep-makanan.css">
   </head>
   <body>
-    <nav class="bg-[#FFF9EE]">
-      <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-      >
-        <a
-          href="index.html"
-          class="flex items-center space-x-3 rtl:space-x-reverse"
-        >
-          <img src="img/awan_batik.png" class="h-8" alt="warasa Logo" />
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap text-black"
-            >warasa</span
-          >
-        </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-          <div class="ml-20"></div>
-          <button
-            data-collapse-toggle="navbar-cta"
-            type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-            aria-controls="navbar-cta"
-            aria-expanded="false"
-          >
-            <span class="sr-only">Open main menu</span>
-            <svg
-              class="w-5 h-5"
-              aria-hidden="true"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 17 14"
-            >
-              <path
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M1 1h15M1 7h15M1 13h15"
-              />
-            </svg>
-          </button>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-cta"
-        >
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 text-black dark:border-gray-700"
-          >
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 text-black"
-                aria-current="page"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparenttext-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Services</a
-              >
-            </li>
-            <li>
-              <a
-                href="#"
-                class="block py-2 px-3 md:p-0 rounded hover:bg-gray-100 md:hover:bg-transparent text-black dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+   <!-- navbar -->
+   <header
+   class="fixed inset-x-0 top-0 z-30 mx-auto w-full max-w-screen-md border border-gray-100 bg-white/80 py-3 shadow backdrop-blur-lg md:top-6 md:rounded-3xl lg:max-w-screen-lg">
+   <div class="px-4">
+       <div class="flex items-center justify-between">
+           <div class="flex shrink-0">
+               <a aria-current="page" class="flex items-center" href="/">
+                   <img class="h-7 w-auto" src="img/awan_batik.png" alt="">
+                   <p class="sr-only">warasa</p>
+               </a>
+           </div>
+           <div class="hidden md:flex md:items-center md:justify-center md:gap-5">
+               <a aria-current="page"
+                   class="inline-block rounded-lg px-2 py-1 text-sm font-medium hover:scale-110 hover:text-[#974D25] hover:font-semibold text-gray-900 transition-all duration-200 hover:bg-gray-100 "
+                   href="#">Home</a>
+               <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium hover:scale-110 hover:text-[#974D25] hover:font-semibold text-gray-900 transition-all duration-200 hover:bg-gray-100 "
+                   href="#">About</a>
+               <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium hover:scale-110 hover:text-[#974D25] hover:font-semibold text-gray-900 transition-all duration-200 hover:bg-gray-100 "
+                   href="#">Services</a>
+               <a class="inline-block rounded-lg px-2 py-1 text-sm font-medium hover:scale-110 hover:text-[#974D25] hover:font-semibold text-gray-900 transition-all duration-200 hover:bg-gray-100"
+                   href="#">Contact</a>
+           </div>
+           <div class="flex items-center justify-end gap-3">
+               <a class="hidden items-center justify-center rounded-xl bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 transition-all duration-150 hover:bg-gray-50 sm:inline-flex"
+                   href="/login">View</a>
+               <a class="inline-flex items-center justify-center rounded-xl bg-blue-600 px-3 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-150 hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                   href="/login">Booking</a>
+           </div>
+       </div>
+   </div>
+</header>
 
     <section
       class="flex items-center justify-center h-screen bg-[url('./img/background-1.png')] bg-no-repeat bg-cover"
@@ -144,124 +95,127 @@
         <img src="img/awan_batik1.png" alt="" />
       </div>
     </section>
-
-    <section
-      class="h-screen flex-col items-center justify-center bg-slate-100 bg-[url('img/bg2.png')] bg-no-repeat bg-cover"
-    >
-      <div class="flex items-center justify-center">
-        <h1 class="text-[#974D25] text-5xl font-bold mb-10 p-5">
-          Sejarah Singkat Kuliner Indonesia
-        </h1>
-      </div>
-      <div class="history bg-red-500 p-5 flex-col justify-center items-center">
-        <div class="line  py-5 bg-red-900 h-auto"></div>
-      </div>
-    </section>
+     <!--section 2-->
+     <section
+     class="h-full flex-col items-center justify-center bg-[url('img/bg2.png')] bg-no-repeat bg-cover"
+   >
+     <div class="flex items-center justify-center">
+       <h1 class="text-[#974D25] text-5xl font-bold mb-10 p-5">
+         Sejarah Singkat Kuliner Indonesia
+       </h1>
+     </div>
+     <div class="history  p-5 flex-col justify-center items-center">
+        <div class="relative p-10">
+         <div class="absolute left-1/2 transform -translate-x-1/2 h-5/6 w-1 bg-orange-600"></div>
+         <!-- Bagian 1: Zaman Prasejarah -->
+         <div class="mb-8 flex justify-between items-center w-full">
+           <div class="w-5/12">
+             <div class="p-4 bg-orange-300 rounded-lg">
+               <h2 class="font-bold text-xl">Zaman Prasejarah hingga Kerajaan</h2>
+               <p class="text-sm mt-2">
+                 Penduduk masyarakat Indonesia mengonsumsi umbi-umbian, buah, dan hasil hutan, mengembangkan masak sederhana seperti merebus dan memanggang.
+               </p>
+               <p class="text-sm mt-2">
+                 Pada masa kerajaan Sriwijaya dan Majapahit (abad ke-7 hingga ke-15), rempah-rempah sudah menjadi bagian dari perdagangan dunia.
+               </p>
+             </div>
+           </div>
+           <div class="w-5/12"></div>
+           <h1 class="font-bold text-[#974D25] text-2xl justify-between text-center-center w-7/12"><- abad ke 7- abad 15</h1>
+         </div>
+         <h1 class="font-bold text-[#974D25] text-2xl justify-between text-center-center w-7/12 absolute mt-7">1500-1945 -></h1>
+         <!-- Bagian 2: Masa Penjajahan -->
+         <div class="mb-8 flex justify-between items-center w-full">
+           <div class="w-5/12"></div>
+           <div class="w-5/12">
+             <div class="p-4 bg-orange-300 rounded-lg">
+               <h2 class="font-bold text-xl">Masa Penjajahan (1500-1945)</h2>
+               <p class="text-sm mt-2">
+                 Abad ke-16 hingga ke-19: Penjajahan Belanda membawa pengaruh kuat dalam bidang kuliner. Banyak masakan tradisional Indonesia yang dipadukan dengan bahan dan cita rasa Eropa.
+               </p>
+               <p class="text-sm mt-2">
+                 Pengaruh kuliner dari India, Cina, dan Arab juga mulai mempengaruhi berbagai jenis masakan Indonesia.
+               </p>
+             </div>
+           </div>
+         </div>
    
-    <!-- section 5 -->
-    <section class="text-gray-600 body-font     >
-      ">
-      
-      <div class="container px-5 py-24 mx-auto" bis_skin_checked="1">
-        <div class="flex flex-wrap -m-4" bis_skin_checked="1">
-          <div class="p-4 md:w-1/3" bis_skin_checked="1">
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" bis_skin_checked="1">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://shorturl.at/03E85" alt="blog">
-              <div class="p-6" bis_skin_checked="1">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKANAN KHAS</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Rendang</h1>
-                <p class="leading-relaxed mb-3">Rendang adalah hidangan yang berasal dari Minangkabau, Sumatera Barat, dan terkenal karena rasa dan aroma rempahnya yang kuat. Daging sapi dipilih sebagai bahan utama.</p>
-                <div class="flex items-center flex-wrap " bis_skin_checked="1">
-                  <a class="text-[#FA7A04] inline-flex items-center md:mb-2 lg:mb-0">pelajari lebih lanjut
-
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                  </span>
-                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>6
-                  </span>
-                </div>
-              </div>
-            </div>
+         <!-- Bagian 3: Era Kemerdekaan -->
+         <div class="mb-8 flex justify-between items-center w-full">
+           <div class="w-5/12">
+             <div class="p-4 bg-orange-300 rounded-lg">
+               <h2 class="font-bold text-xl">Era Kemerdekaan</h2>
+               <p class="text-sm mt-2">
+                 Abad ke-20 hingga ke-21: Perjalanan Belanda membawa berbagai pengaruh dalam perkembangan kuliner Indonesia.
+               </p>
+               <p class="text-sm mt-2">
+                 Munculnya hidangan baru yang lebih kreatif dan terpengaruh oleh globalisasi.
+               </p>
+             </div>
+           </div>
+           <div class="w-5/12"></div>
+           <h1 class="font-bold text-[#974D25] text-2xl justify-between text-center-center w-7/12"><- 1920</h1>
+         </div>
+         <h1 class="font-bold text-[#974D25] text-2xl justify-between text-center-center w-7/12 absolute mt-7">1920 -></h1>
+         <!-- Bagian 4: Era Globalisasi -->
+         <div class="flex justify-between items-center w-full">
+           <div class="w-5/12"></div>
+           <div class="w-5/12">
+             <div class="p-4 bg-orange-300 rounded-lg">
+               <h2 class="font-bold text-xl">Era Globalisasi</h2>
+               <p class="text-sm mt-2">
+                 Pada era ini, kuliner Indonesia semakin dikenal di dunia dan mengalami pengaruh dari berbagai budaya, menciptakan hidangan fusion yang kaya rasa.
+               </p>
+             </div>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- section makanan -->
+  <div class="flex-auto">
+    <div class="flex items-center justify-center"><h1 class="text-[#974D25] text-7xl font-bold flex text-center items-center">
+      Makanan Populer</div>
+    </h1>
+    <div class="flex items-center justify-center h-screen">
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 items-center justify-center ">
+      <!-- Card 1 -->
+      <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-300">
+          <img class="w-full h-48 object-cover" src="img/bg-rendang-img.png" alt="Rendang">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Rendang</h3>
+              <p class="text-gray-700">Rendang adalah masakan khas Minangkabau yang penuh dengan rempah-rempah.</p>
           </div>
-          <div class="p-4 md:w-1/3" bis_skin_checked="1">
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" bis_skin_checked="1">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="data:image/jpeg;base64,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" alt="blog">
-              <div class="p-6" bis_skin_checked="1">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKANAN KHAS</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Pempek</h1>
-                <p class="leading-relaxed mb-3">Pempek adalah makanan khas dari Palembang yang terbuat dari ikan (biasanya ikan tenggiri) yang dicampur dengan tepung sagu, lalu dibentuk dan dimasak.</p>
-                <div class="flex items-center flex-wrap " bis_skin_checked="1">
-                  <a class="text-[#FA7A04] inline-flex items-center md:mb-2 lg:mb-0">pelajari lebih lanjut
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                  </span>
-                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>6
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="p-4 md:w-1/3" bis_skin_checked="1">
-            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" bis_skin_checked="1">
-              <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="data:image/jpeg;base64,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" alt="blog">
-              <div class="p-6" bis_skin_checked="1">
-                <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">MAKANAN KHAS</h2>
-                <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Sate Lilit</h1>
-                <p class="leading-relaxed mb-3">Sate lilit adalah hidangan khas Bali yang unik, berbeda dari sate pada umumnya yang menggunakan potongan daging. Sate ini dibuat dari daging yang dicincang halus, biasanya daging ayam, babi, atau i</p>
-                <div class="flex items-center flex-wrap " bis_skin_checked="1">
-                  <a class="text-[#FA7A04] inline-flex items-center md:mb-2 lg:mb-0">pelajari lebih lanjut
-                    <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path d="M5 12h14"></path>
-                      <path d="M12 5l7 7-7 7"></path>
-                    </svg>
-                  </a>
-                  <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1 border-r-2 border-gray-200">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
-                      <circle cx="12" cy="12" r="3"></circle>
-                    </svg>1.2K
-                  </span>
-                  <span class="text-gray-400 inline-flex items-center leading-none text-sm">
-                    <svg class="w-4 h-4 mr-1" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
-                      <path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"></path>
-                    </svg>6
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
 
+      <!-- Card 2 -->
+      <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-300">
+          <img class="w-full h-48 object-cover" src="img/sate-img.png" alt="Sate">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Sate</h3>
+              <p class="text-gray-700">Sate adalah makanan berbahan dasar daging yang ditusuk dan dibakar dengan bumbu khas.</p>
+          </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="max-w-sm bg-white rounded-lg shadow-md overflow-hidden transform hover:scale-105 hover:shadow-xl transition duration-300">
+          <img class="w-full h-48 object-cover" src="img/nasi-goreng.png" alt="Nasi Goreng">
+          <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Nasi Goreng</h3>
+              <p class="text-gray-700">Nasi goreng adalah hidangan nasi yang digoreng bersama dengan berbagai bumbu.</p>
+          </div>
+          
+      </div>
+  </div>
+  
+     <!-- akhir card makanan -->
+</div>
+</section>
+    <!-- footer -->
     <footer class="text-gray-600 body-font bg-red-900  ">
       <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col" bis_skin_checked="1">
         <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
-            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-          </svg>
+          <img class="h-16" src="img/awan_batik.png" alt="">
           <span class="text-white ml-3 text-xl">Warasa</span>
         </a>
         <p class="text-sm text-white sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4">© Warasa
